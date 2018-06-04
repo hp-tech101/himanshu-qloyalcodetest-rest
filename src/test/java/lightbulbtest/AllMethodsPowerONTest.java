@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.given;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.simple.JSONObject;
+
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -37,14 +37,14 @@ public class AllMethodsPowerONTest extends BaseTest {
 		
 				
 		ExtentUtil.fetchTest().info("Calling endpoint with userId("+userId+"): "+RestAssured.baseURI+resource);
-		JSONObject postJsonMsg=ApiResources.getPostRequesttBody(power);
+		String postJsonMsg=ApiResources.getPostRequestBody(power);
 		
 				ExtentUtil.fetchTest().info("Request Body : "+postJsonMsg);
 		Response response=
                 given().
                 header("content-type", "application/json").
                 header("userid",userId).
-                body(postJsonMsg.toJSONString()).
+                body(postJsonMsg).
                 when().
                 post(resource);
 		
@@ -89,7 +89,7 @@ public class AllMethodsPowerONTest extends BaseTest {
 		String userId=ApiResources.getUserId();
 		
 		ExtentUtil.fetchTest().info("Calling endpoint with userId("+userId+") : "+RestAssured.baseURI+resource);
-		JSONObject postJsonMsg=ApiResources.getPostRequesttBody(power);
+		String postJsonMsg=ApiResources.getPostRequestBody(power);
 		ExtentUtil.fetchTest().info("Request Body : "+postJsonMsg);
 				
 		Response response=
@@ -97,7 +97,7 @@ public class AllMethodsPowerONTest extends BaseTest {
                 contentType(ContentType.JSON).
                 header("Content-Type", "application/json").
                 header("userid",userId).
-                body(postJsonMsg.toJSONString()).
+                body(postJsonMsg).
                 when().
                 post(resource);
 		

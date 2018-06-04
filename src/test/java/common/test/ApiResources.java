@@ -1,6 +1,6 @@
 package common.test;
 
-import org.json.simple.JSONObject;
+
 
 public class ApiResources {
 	private static String allMethods = "/api/allmethods";
@@ -24,9 +24,11 @@ public class ApiResources {
 		return userId;
 	}
 	
-	public static JSONObject getPostRequesttBody(String power) {
-		JSONObject requestParams = new JSONObject();
-		requestParams.put("power", power); 
-		return requestParams;	
+	public static String getPostRequestBody(String power) {
+		//JSONObject requestParams = new JSONObject();
+		//requestParams.put("power", power);
+		String msgBody="{ \"power\" : \""+power+"\" }";
+		return msgBody;
+			
 	}
 }
