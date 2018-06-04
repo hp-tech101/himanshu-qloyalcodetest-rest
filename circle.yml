@@ -1,0 +1,4 @@
+machine:
+
+ environment:
+  CIRCLE_ARTIFACTS: artefacts/reports/ExecutionReport.html
