@@ -19,4 +19,15 @@ jobs:
       - store_test_results:
           path: artefacts/reports/ExecutionReport.html
      
-    
+workflows:
+  version: 2
+  hourly:
+    triggers:
+    - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+    - build    
