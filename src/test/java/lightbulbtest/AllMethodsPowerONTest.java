@@ -28,7 +28,7 @@ import io.restassured.response.Response;
 @Listeners(base.TestListener.class)
 public class AllMethodsPowerONTest extends BaseTest {
 	
-	//@Test(dataProviderClass=TestDataFile.class, dataProvider="poweron200", groups="regression")
+	@Test(dataProviderClass=TestDataFile.class, dataProvider="poweron200", groups="regression")
 	public void postRequestPowerOn_Valid_range(String power) {
 		RestAssured.baseURI=Settings.hostRestApi;
 		String resource=ApiResources.getResourcePowerOn();
