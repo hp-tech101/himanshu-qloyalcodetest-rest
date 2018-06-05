@@ -14,4 +14,9 @@ jobs:
       - checkout
       - run: mvn compile
       - run: mvn test
+      - store_artifacts:
+           path: artefacts/reports/ExecutionReport.html
+      - store_test_results:
+          path: artefacts/reports/ExecutionReport.html
+     
     
