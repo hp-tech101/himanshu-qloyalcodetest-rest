@@ -14,12 +14,18 @@
 
 ## 2 - Execution from CicleCI <br/>
 
-&nbsp;a. To view the circleCI build login to circleci.com using the following credentials <br/>
+&nbsp;a. To view the circleCI build login to circleci.com (via github) using the following credentials <br/>
             username: himanshu.tech101@gmail.com <br/>
             password: Eminence17$$18 <br/>
             
 &nbsp;b. To view the report from circleCI build, under each build goto the "Artifacts" tab and browse to <br/>
 
-        ### Container0/home/circleci/project/artefacts/reports/ExecutionReport.html  <br/>
-&nbsp;c. 
-        
+        ### Container0/home/circleci/project/artefacts/reports/ExecutionReport.html  
+<br/>
+&nbsp;c. Also, the build has been scheduled to run every hour in config.yml and build notifications can be seen on a slack channel <br/>
+         ### Slack Channel details <br/>
+         #### url : https://codetest-group.slack.com/ <br/>
+         #### channel : qloyalcodetest-ci <br/>
+         #### username: himanshu.tech101@gmail.com <br/>
+         #### password: Eminence17$$18 <br/>
+
