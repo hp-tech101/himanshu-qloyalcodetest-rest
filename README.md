@@ -33,3 +33,6 @@
 Go to https://dashboard.leantesting.com/en/projects/qloyalcodetest/34839/bug-tracker#3 <br/>
 username: himanshutech101 <br/>
 password: Success17$$18
+
+##Note
+##Post request is failing because of issue with Content-Type (pending debugging) because of which build on CircleCI is failing
