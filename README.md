@@ -12,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;d.3 command 3 -> mvn test <br/>
 &nbsp;e. Report is generated in artefacts/reports/ExecutionReport.html <br/>
 
-## 2 - Execution from CicleCI <br/>
+## 2 - Execution from CircleCI <br/>
 
 &nbsp;a. To view the circleCI build login to circleci.com (via github) using the following credentials <br/>
             username: himanshu.tech101@gmail.com <br/>
