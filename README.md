@@ -29,3 +29,7 @@
          #### username: himanshu.tech101@gmail.com <br/>
          #### password: Eminence17$$18 <br/>
 
+## 3 - To view the defects <br/>
+Go to https://dashboard.leantesting.com/en/projects/qloyalcodetest/34839/bug-tracker#3 <br/>
+username: himanshutech101 <br/>
+password: Success17$$18
